@@ -80,7 +80,8 @@ var seriesDictioanry={
         "A link in their pasts leads an honest cop to a fugitive gang boss, whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.",
       Image:
         "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Sacred_Games_Title.png/250px-Sacred_Games_Title.png",
-      Rating: `8.7/10`,AvailableAt : "Amazon Prime"
+      Rating: `8.7/10`,
+      AvailableAt : "Amazon Prime"
     },
     {
       Title: "Mirzapur ",
