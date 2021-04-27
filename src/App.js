@@ -156,6 +156,7 @@ function App() {
           <p>{description}</p>
           
           <h3 style={{color:"black"}}><strong>IMDB:{ratings}</strong></h3>
+          
           <h3><span style={{color:"black"}}>Available At :</span> {available}</h3>
         </div>
       </li>
