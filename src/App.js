@@ -14,6 +14,13 @@ var seriesDictioanry={
       AvailableAt : "Netflix"
     },
     {
+      Title: "The Office",
+      Description:"The Office is an American mockumentary sitcom television series that depicts the everyday work lives of office employees in the Scranton, Pennsylvania, branch.",
+      Image:"https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg",
+      Rating : '8.9/10',
+      AvailableAt:"Amazon Prime"
+    },
+    {
       Title: "The Big Bang Theory",
       Description:
         "This series is about brilliant physicists who don't know how to interact with people, especially women. All this begins to change when a free-spirited woman moves in next door.",
@@ -21,6 +28,13 @@ var seriesDictioanry={
         "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/The_Big_Bang_Theory_%28Official_Title_Card%29.png/250px-The_Big_Bang_Theory_%28Official_Title_Card%29.png",
       Rating: `8.1/10`,
       AvailableAt : "Netflix"
+    },
+    {
+      Title:"Brooklyn Nine Nine",
+      Description: "Ray Holt, an eccentric commanding officer, and his diverse and quirky team of odd detectives solve crimes in Brooklyn, New York City." , 
+      Image:"https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg",
+      Rating: '8.3/10',
+      AvailableAt : 'Netflix'
     },
     {
       Title: "Young Sheldon",
@@ -34,13 +48,13 @@ var seriesDictioanry={
   ],
   Drama: [
     {
-      Title: "Kota Factory",
+      Title: "Scam 1992,The Harshad Mehta Story",
       Image:
-        "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Kota_Factory_poster.jpg/250px-Kota_Factory_poster.jpg",
+        "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Scam_1992_poster.png/250px-Scam_1992_poster.png",
       Description:
-        "It is the first black and white web series in India. The show follows the life of 16-year-old Vaibhav who moves to Kota to get into IIT.",
-      Rating: `9/10`,
-      AvailableAt : "Netflix"
+        "Set in 1980's & 90's Bombay, Scam 1992 follows the life of Harshad Mehta - a stockbroker who single-handedly took the stock market to dizzying heights & his catastrophic downfall.",
+      Rating: `9.5/10`,
+      AvailableAt : "Amazon Prime"
     },
 
     {
@@ -66,13 +80,11 @@ var seriesDictioanry={
 
   Crime: [
     {
-      Title: "Scam 1992,The Harshad Mehta Story",
-      Image:
-        "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Scam_1992_poster.png/250px-Scam_1992_poster.png",
-      Description:
-        "Set in 1980's & 90's Bombay, Scam 1992 follows the life of Harshad Mehta - a stockbroker who single-handedly took the stock market to dizzying heights & his catastrophic downfall.",
-      Rating: `9.5/10`,
-      AvailableAt : "Amazon Prime"
+     Title:"Peaky Blinders",
+     Description :"Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham. Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities.",
+     Image:"https://m.media-amazon.com/images/I/71HoryWKeXL._AC_SY741_.jpg",
+     Rating:"8.8/10",
+     AvailableAt:"Netflix"
     },
     {
       Title: "Sacred Games",
@@ -91,6 +103,28 @@ var seriesDictioanry={
         "A shocking incident at a wedding procession ignites a series of events entangling the lives of two families in the lawless city of Mirzapur.",
       Rating: `8.4/10`,
       AvailableAt : "Amazon Prime"
+    }
+  ],
+  Scify : [
+    {
+      Title : "Dark",
+      Description:"When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids.",
+      Image:"https://assets.telegraphindia.com/telegraph/9ee8d472-70cb-485f-871a-8f886b8525f7.jpg",
+      Rating:"8.8/10",
+      AvailableAt:"Netflix"
+    },{
+      Title : "Stranger Things",
+      Description:"In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
+      Image:"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg",
+      Rating:"8.8/10",
+      AvailableAt:"Netflix"
+    },
+    {
+      Title : "Westworld",
+      Description:"In a futuristic Western-themed amusement park, Westworld, the visitors interact with automatons. However, all hell breaks loose when the robots begin malfunctioning.",
+      Image:"https://m.media-amazon.com/images/M/MV5BMTRmYzNmOTctZjMwOS00ODZlLWJiZGQtNDg5NDY5NjE3MTczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+      Rating:"8.7/10",
+      AvailableAt:"Disney+"
     }
   ]
 };
@@ -133,6 +167,7 @@ function App() {
     <div className="App">
       <nav className="navigationBar">
         <div className="navigationHeader"><h1 style={{textAlign:"center",fontWeight:"bold",fontSize:"30px"}}>Series Suggestion</h1>
+        <p style={{textAlign:"center"}}><strong>Here you can find the best series on the genre you choose.</strong></p>
         <br></br>
         
           {seriesGenre.map((genre)=>{

@@ -15,12 +15,13 @@
 .navigationHeader{
  
   background-color: grey;
-  padding: 0.5rem;
+  padding: 0.2rem;
 
 }
 li {
   display: flex;
   justify-content: center;
+  padding: 0rem;
   align-items: top;
   background-color: grey;
   margin-bottom: 1rem;
